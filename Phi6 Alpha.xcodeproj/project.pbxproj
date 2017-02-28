@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		301045841E4B355500D27A48 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301045811E4B355500D27A48 /* SourceSansPro-ExtraLight.ttf */; };
+		301045851E4B355500D27A48 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301045821E4B355500D27A48 /* SourceSansPro-Light.ttf */; };
+		301045861E4B355500D27A48 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 301045831E4B355500D27A48 /* SourceSansPro-Regular.ttf */; };
+		3084EA041E487A0E0064C869 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3084EA031E487A0E0064C869 /* LevelViewController.swift */; };
+		3093494D1E449B920006F622 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093494C1E449B920006F622 /* Arrow.swift */; };
+		30AB47C61E49D90400671FA0 /* TheoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB47C51E49D90400671FA0 /* TheoryViewController.swift */; };
+		3F5DAC2C1E4CD2EA00AE47D1 /* Lever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DAC2B1E4CD2EA00AE47D1 /* Lever.swift */; };
+		5A00863C1E4D2E6500035DC2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A00863E1E4D2E6500035DC2 /* Localizable.strings */; };
+		5A00DAD41E48C16B00F13164 /* Adder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A00DAD31E48C16B00F13164 /* Adder.swift */; };
+		5A2F7E041E4BD06900FEDC4A /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7E031E4BD06900FEDC4A /* Excercise.swift */; };
+		5A3C24E81E6442CF00BC0C30 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C24E71E6442CF00BC0C30 /* SharedViewController.swift */; };
+		5A3C24EB1E6484DD00BC0C30 /* RopeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C24EA1E6484DD00BC0C30 /* RopeClass.swift */; };
+		5A3C24ED1E64851500BC0C30 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C24EC1E64851500BC0C30 /* Constants.swift */; };
+		5A3C24EF1E64861400BC0C30 /* MainMenuObjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3C24EE1E64861400BC0C30 /* MainMenuObjectController.swift */; };
+		5A3C24F11E64864200BC0C30 /* RopeData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A3C24F01E64864200BC0C30 /* RopeData.plist */; };
+		5A3C24F31E64D3E000BC0C30 /* MainMenuObjectController.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A3C24F21E64D3E000BC0C30 /* MainMenuObjectController.sks */; };
+		5A4A66721E4B60F600C137B8 /* CategoryLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A66711E4B60F600C137B8 /* CategoryLesson.swift */; };
+		5A4A66741E4B615700C137B8 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A66731E4B615700C137B8 /* LessonViewController.swift */; };
+		5A72AB931E44C49700227938 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A72AB921E44C49700227938 /* PhysicsCategory.swift */; };
+		5A9CB73D1E659B6100A63B82 /* ContextualMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5A9CB73C1E659B6100A63B82 /* ContextualMenu.gif */; };
+		5A9CB73F1E659F4E00A63B82 /* LaserPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB73E1E659F4E00A63B82 /* LaserPhotoCell.swift */; };
+		5A9CB7411E659F9300A63B82 /* BaseTutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB7401E659F9300A63B82 /* BaseTutorialScene.swift */; };
+		5A9CB7431E65A6BB00A63B82 /* PhisphereRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB7421E65A6BB00A63B82 /* PhisphereRed.swift */; };
+		5A9CB74B1E65B00900A63B82 /* LSCTutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A9CB7441E65B00900A63B82 /* LSCTutorial.sks */; };
+		5A9CB74C1E65B00900A63B82 /* LSCTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB7451E65B00900A63B82 /* LSCTutorial.swift */; };
+		5A9CB74D1E65B00900A63B82 /* SimpleStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB7461E65B00900A63B82 /* SimpleStateMachine.swift */; };
+		5A9CB74E1E65B00900A63B82 /* sksTutorial1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5A9CB7471E65B00900A63B82 /* sksTutorial1.sks */; };
+		5A9CB74F1E65B00900A63B82 /* sksTutorial1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB7481E65B00900A63B82 /* sksTutorial1.swift */; };
+		5A9CB7501E65B00900A63B82 /* TutorialFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB7491E65B00900A63B82 /* TutorialFunctions.swift */; };
+		5A9CB7511E65B00900A63B82 /* viewTutorialInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9CB74A1E65B00900A63B82 /* viewTutorialInfo.swift */; };
+		5ABEEA251E65864200B8A8EC /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ABEEA221E65864200B8A8EC /* Particle.png */; };
+		5ABEEA261E65864200B8A8EC /* Particle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5ABEEA231E65864200B8A8EC /* Particle.sks */; };
+		5ABEEA271E65864200B8A8EC /* Particle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ABEEA241E65864200B8A8EC /* Particle@2x.png */; };
+		5AD999B41E5D899E003524EB /* JsonReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD999B31E5D899E003524EB /* JsonReadWrite.swift */; };
+		5AD999B61E5D9837003524EB /* Initializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD999B51E5D9837003524EB /* Initializer.swift */; };
+		5AD999DD1E5F2D3F003524EB /* PcScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD999DC1E5F2D3F003524EB /* PcScreenViewController.swift */; };
+		8167535D1E4C9E37002219DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8167535C1E4C9E37002219DE /* AVFoundation.framework */; };
+		8167535F1E4C9EC8002219DE /* Bag Raiders - Shooting Stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8167535E1E4C9EC8002219DE /* Bag Raiders - Shooting Stars.mp3 */; };
+		81982EFB1E4CA86F00E592F5 /* Crypt of the Necrodancer OST - Portabellohead (2-3).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81982EFA1E4CA86F00E592F5 /* Crypt of the Necrodancer OST - Portabellohead (2-3).mp3 */; };
+		81982EFD1E4CB0CA00E592F5 /* cutted.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81982EFC1E4CB0CA00E592F5 /* cutted.mp3 */; };
+		81982EFF1E4CB2B100E592F5 /* button-37.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81982EFE1E4CB2B100E592F5 /* button-37.mp3 */; };
+		81982F011E4CB47C00E592F5 /* button-27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81982F001E4CB47C00E592F5 /* button-27.mp3 */; };
+		8715F5FC1E36510F001E2DEA /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715F5FB1E36510F001E2DEA /* Singleton.swift */; };
+		8715F6081E368279001E2DEA /* ObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715F6071E368279001E2DEA /* ObjectTableViewCell.swift */; };
+		8715F60A1E36828A001E2DEA /* ObjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8715F6091E36828A001E2DEA /* ObjectTableViewController.swift */; };
+		87283AB91E4331DE00FDEE95 /* GameObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87283AB81E4331DE00FDEE95 /* GameObjectNode.swift */; };
+		87283ABC1E43325100FDEE95 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87283ABA1E43325100FDEE95 /* Character.swift */; };
+		87283ABD1E43325100FDEE95 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87283ABB1E43325100FDEE95 /* Obstacle.swift */; };
+		8731F2C21E40D6FE002C5253 /* AndGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2B21E40D6FE002C5253 /* AndGate.swift */; };
+		8731F2C31E40D6FE002C5253 /* Chronometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2B31E40D6FE002C5253 /* Chronometer.swift */; };
+		8731F2C51E40D6FE002C5253 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2B51E40D6FE002C5253 /* GameObject.swift */; };
+		8731F2C61E40D6FE002C5253 /* LaserAccelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2B61E40D6FE002C5253 /* LaserAccelerometer.swift */; };
+		8731F2C71E40D6FE002C5253 /* LaserRangefinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2B71E40D6FE002C5253 /* LaserRangefinder.swift */; };
+		8731F2C81E40D6FE002C5253 /* LoadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2B81E40D6FE002C5253 /* LoadCell.swift */; };
+		8731F2C91E40D6FE002C5253 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2B91E40D6FE002C5253 /* Logic.swift */; };
+		8731F2CA1E40D6FE002C5253 /* NotGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2BA1E40D6FE002C5253 /* NotGate.swift */; };
+		8731F2CB1E40D6FE002C5253 /* OrGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2BB1E40D6FE002C5253 /* OrGate.swift */; };
+		8731F2CC1E40D6FE002C5253 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2BC1E40D6FE002C5253 /* PhotoCell.swift */; };
+		8731F2CD1E40D6FE002C5253 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2BD1E40D6FE002C5253 /* Rectangle.swift */; };
+		8731F2CE1E40D6FE002C5253 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2BE1E40D6FE002C5253 /* Sensor.swift */; };
+		8731F2CF1E40D6FE002C5253 /* SimpleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2BF1E40D6FE002C5253 /* SimpleObject.swift */; };
+		8731F2D01E40D6FE002C5253 /* SpeedCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2C01E40D6FE002C5253 /* SpeedCamera.swift */; };
+		8731F2D11E40D6FE002C5253 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2C11E40D6FE002C5253 /* Triangle.swift */; };
+		8731F2D81E40DD5C002C5253 /* CarusiellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2D51E40DD5C002C5253 /* CarusiellViewController.swift */; };
+		8731F2DA1E40DD5C002C5253 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2D71E40DD5C002C5253 /* MainViewController.swift */; };
+		8731F2E71E40E209002C5253 /* EAAnimationFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2E21E40E209002C5253 /* EAAnimationFuture.swift */; };
+		8731F2E81E40E209002C5253 /* EasyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2E41E40E209002C5253 /* EasyAnimation.swift */; };
+		8731F2E91E40E209002C5253 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8731F2E51E40E209002C5253 /* Info-tvOS.plist */; };
+		8731F2EA1E40E209002C5253 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8731F2E61E40E209002C5253 /* Info.plist */; };
+		8731F2F01E40E2D1002C5253 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8731F2EC1E40E2D1002C5253 /* LICENSE */; };
+		8731F2F11E40E2D1002C5253 /* RBBBlockBasedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2ED1E40E2D1002C5253 /* RBBBlockBasedArray.swift */; };
+		8731F2F21E40E2D1002C5253 /* RBBLinearInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2EE1E40E2D1002C5253 /* RBBLinearInterpolation.swift */; };
+		8731F2F31E40E2D1002C5253 /* RBBSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2EF1E40E2D1002C5253 /* RBBSpringAnimation.swift */; };
+		8731F2FE1E412965002C5253 /* SensorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2FD1E412965002C5253 /* SensorTableViewController.swift */; };
+		8731F3001E4129A5002C5253 /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8731F2FF1E4129A5002C5253 /* SensorTableViewCell.swift */; };
+		878B00FA1E4B929B005EDFFD /* Fulcrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B00F91E4B929B005EDFFD /* Fulcrum.swift */; };
+		878B00FC1E4B9313005EDFFD /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B00FB1E4B9313005EDFFD /* Beam.swift */; };
+		878B00FE1E4BA527005EDFFD /* Pendulum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B00FD1E4BA527005EDFFD /* Pendulum.swift */; };
+		87DC85171E34BA4B0068555D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC85161E34BA4B0068555D /* AppDelegate.swift */; };
+		87DC85191E34BA4B0068555D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 87DC85181E34BA4B0068555D /* GameScene.sks */; };
+		87DC851B1E34BA4B0068555D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 87DC851A1E34BA4B0068555D /* Actions.sks */; };
+		87DC851D1E34BA4B0068555D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC851C1E34BA4B0068555D /* GameScene.swift */; };
+		87DC851F1E34BA4B0068555D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC851E1E34BA4B0068555D /* GameViewController.swift */; };
+		87DC85221E34BA4B0068555D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DC85201E34BA4B0068555D /* Main.storyboard */; };
+		87DC85241E34BA4B0068555D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87DC85231E34BA4B0068555D /* Assets.xcassets */; };
+		87DC85271E34BA4B0068555D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DC85251E34BA4B0068555D /* LaunchScreen.storyboard */; };
+		87FACC351E449400005B6F67 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FACC341E449400005B6F67 /* Circle.swift */; };
+		F2B4F48959F70FA4D552ED6D /* Pods_Phi6_Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F65B8EB1411AF96B6EE6A9 /* Pods_Phi6_Alpha.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		127D1FCEE4984D940F70ABB6 /* Pods-Phi6 Alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phi6 Alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phi6 Alpha/Pods-Phi6 Alpha.debug.xcconfig"; sourceTree = "<group>"; };
+		301045811E4B355500D27A48 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-ExtraLight.ttf"; path = "Phi6 Alpha/SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		301045821E4B355500D27A48 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Light.ttf"; path = "Phi6 Alpha/SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		301045831E4B355500D27A48 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceSansPro-Regular.ttf"; path = "Phi6 Alpha/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		3084EA031E487A0E0064C869 /* LevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		3093494C1E449B920006F622 /* Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		30AB47C51E49D90400671FA0 /* TheoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheoryViewController.swift; sourceTree = "<group>"; };
+		3F5DAC2B1E4CD2EA00AE47D1 /* Lever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lever.swift; sourceTree = "<group>"; };
+		5A0086381E4D2E5600035DC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		5A0086391E4D2E5700035DC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5A00863D1E4D2E6500035DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A00863F1E4D2E6600035DC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A0086401E4D2E6700035DC2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5A0086421E4D2ECA00035DC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		5A00DAD31E48C16B00F13164 /* Adder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adder.swift; sourceTree = "<group>"; };
+		5A2F7E031E4BD06900FEDC4A /* Excercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
+		5A3C24E71E6442CF00BC0C30 /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
+		5A3C24EA1E6484DD00BC0C30 /* RopeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RopeClass.swift; sourceTree = "<group>"; };
+		5A3C24EC1E64851500BC0C30 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5A3C24EE1E64861400BC0C30 /* MainMenuObjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuObjectController.swift; sourceTree = "<group>"; };
+		5A3C24F01E64864200BC0C30 /* RopeData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RopeData.plist; sourceTree = "<group>"; };
+		5A3C24F21E64D3E000BC0C30 /* MainMenuObjectController.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuObjectController.sks; sourceTree = "<group>"; };
+		5A4A66711E4B60F600C137B8 /* CategoryLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryLesson.swift; sourceTree = "<group>"; };
+		5A4A66731E4B615700C137B8 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
+		5A72AB921E44C49700227938 /* PhysicsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		5A9CB73C1E659B6100A63B82 /* ContextualMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ContextualMenu.gif; sourceTree = "<group>"; };
+		5A9CB73E1E659F4E00A63B82 /* LaserPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaserPhotoCell.swift; sourceTree = "<group>"; };
+		5A9CB7401E659F9300A63B82 /* BaseTutorialScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTutorialScene.swift; sourceTree = "<group>"; };
+		5A9CB7421E65A6BB00A63B82 /* PhisphereRed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhisphereRed.swift; sourceTree = "<group>"; };
+		5A9CB7441E65B00900A63B82 /* LSCTutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LSCTutorial.sks; sourceTree = "<group>"; };
+		5A9CB7451E65B00900A63B82 /* LSCTutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCTutorial.swift; sourceTree = "<group>"; };
+		5A9CB7461E65B00900A63B82 /* SimpleStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleStateMachine.swift; sourceTree = "<group>"; };
+		5A9CB7471E65B00900A63B82 /* sksTutorial1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sksTutorial1.sks; sourceTree = "<group>"; };
+		5A9CB7481E65B00900A63B82 /* sksTutorial1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sksTutorial1.swift; sourceTree = "<group>"; };
+		5A9CB7491E65B00900A63B82 /* TutorialFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialFunctions.swift; sourceTree = "<group>"; };
+		5A9CB74A1E65B00900A63B82 /* viewTutorialInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewTutorialInfo.swift; sourceTree = "<group>"; };
+		5ABEEA221E65864200B8A8EC /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Particle.png; path = "Phi6 Alpha/Particle.png"; sourceTree = "<group>"; };
+		5ABEEA231E65864200B8A8EC /* Particle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Particle.sks; path = "Phi6 Alpha/Particle.sks"; sourceTree = "<group>"; };
+		5ABEEA241E65864200B8A8EC /* Particle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Particle@2x.png"; path = "Phi6 Alpha/Particle@2x.png"; sourceTree = "<group>"; };
+		5AD999B31E5D899E003524EB /* JsonReadWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonReadWrite.swift; sourceTree = "<group>"; };
+		5AD999B51E5D9837003524EB /* Initializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializer.swift; sourceTree = "<group>"; };
+		5AD999DC1E5F2D3F003524EB /* PcScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PcScreenViewController.swift; sourceTree = "<group>"; };
+		8167535C1E4C9E37002219DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8167535E1E4C9EC8002219DE /* Bag Raiders - Shooting Stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bag Raiders - Shooting Stars.mp3"; sourceTree = "<group>"; };
+		81982EFA1E4CA86F00E592F5 /* Crypt of the Necrodancer OST - Portabellohead (2-3).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Crypt of the Necrodancer OST - Portabellohead (2-3).mp3"; sourceTree = "<group>"; };
+		81982EFC1E4CB0CA00E592F5 /* cutted.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cutted.mp3; sourceTree = "<group>"; };
+		81982EFE1E4CB2B100E592F5 /* button-37.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-37.mp3"; sourceTree = "<group>"; };
+		81982F001E4CB47C00E592F5 /* button-27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-27.mp3"; sourceTree = "<group>"; };
+		8715F5FB1E36510F001E2DEA /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		8715F6071E368279001E2DEA /* ObjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectTableViewCell.swift; sourceTree = "<group>"; };
+		8715F6091E36828A001E2DEA /* ObjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectTableViewController.swift; sourceTree = "<group>"; };
+		87283AB81E4331DE00FDEE95 /* GameObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObjectNode.swift; sourceTree = "<group>"; };
+		87283ABA1E43325100FDEE95 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		87283ABB1E43325100FDEE95 /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		8731F2B21E40D6FE002C5253 /* AndGate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AndGate.swift; path = "Phi6 Alpha/AndGate.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2B31E40D6FE002C5253 /* Chronometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chronometer.swift; path = "Phi6 Alpha/Chronometer.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2B51E40D6FE002C5253 /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameObject.swift; path = "Phi6 Alpha/GameObject.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2B61E40D6FE002C5253 /* LaserAccelerometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaserAccelerometer.swift; path = "Phi6 Alpha/LaserAccelerometer.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2B71E40D6FE002C5253 /* LaserRangefinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaserRangefinder.swift; path = "Phi6 Alpha/LaserRangefinder.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2B81E40D6FE002C5253 /* LoadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadCell.swift; path = "Phi6 Alpha/LoadCell.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2B91E40D6FE002C5253 /* Logic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Logic.swift; path = "Phi6 Alpha/Logic.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2BA1E40D6FE002C5253 /* NotGate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotGate.swift; path = "Phi6 Alpha/NotGate.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2BB1E40D6FE002C5253 /* OrGate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrGate.swift; path = "Phi6 Alpha/OrGate.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2BC1E40D6FE002C5253 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = "Phi6 Alpha/PhotoCell.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2BD1E40D6FE002C5253 /* Rectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rectangle.swift; path = "Phi6 Alpha/Rectangle.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2BE1E40D6FE002C5253 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sensor.swift; path = "Phi6 Alpha/Sensor.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2BF1E40D6FE002C5253 /* SimpleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleObject.swift; path = "Phi6 Alpha/SimpleObject.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2C01E40D6FE002C5253 /* SpeedCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeedCamera.swift; path = "Phi6 Alpha/SpeedCamera.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2C11E40D6FE002C5253 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Triangle.swift; path = "Phi6 Alpha/Triangle.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2D51E40DD5C002C5253 /* CarusiellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarusiellViewController.swift; path = "Phi6 Alpha/CarusiellViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2D71E40DD5C002C5253 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "Phi6 Alpha/MainViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8731F2E21E40E209002C5253 /* EAAnimationFuture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EAAnimationFuture.swift; path = EasyAnimation/EAAnimationFuture.swift; sourceTree = "<group>"; };
+		8731F2E31E40E209002C5253 /* EasyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EasyAnimation.h; path = EasyAnimation/EasyAnimation.h; sourceTree = "<group>"; };
+		8731F2E41E40E209002C5253 /* EasyAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyAnimation.swift; path = EasyAnimation/EasyAnimation.swift; sourceTree = "<group>"; };
+		8731F2E51E40E209002C5253 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "EasyAnimation/Info-tvOS.plist"; sourceTree = "<group>"; };
+		8731F2E61E40E209002C5253 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EasyAnimation/Info.plist; sourceTree = "<group>"; };
+		8731F2EC1E40E2D1002C5253 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = EasyAnimation/RBBSpringAnimation/LICENSE; sourceTree = "<group>"; };
+		8731F2ED1E40E2D1002C5253 /* RBBBlockBasedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBBBlockBasedArray.swift; path = EasyAnimation/RBBSpringAnimation/RBBBlockBasedArray.swift; sourceTree = "<group>"; };
+		8731F2EE1E40E2D1002C5253 /* RBBLinearInterpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBBLinearInterpolation.swift; path = EasyAnimation/RBBSpringAnimation/RBBLinearInterpolation.swift; sourceTree = "<group>"; };
+		8731F2EF1E40E2D1002C5253 /* RBBSpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RBBSpringAnimation.swift; path = EasyAnimation/RBBSpringAnimation/RBBSpringAnimation.swift; sourceTree = "<group>"; };
+		8731F2FD1E412965002C5253 /* SensorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewController.swift; sourceTree = "<group>"; };
+		8731F2FF1E4129A5002C5253 /* SensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
+		878B00F91E4B929B005EDFFD /* Fulcrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fulcrum.swift; sourceTree = "<group>"; };
+		878B00FB1E4B9313005EDFFD /* Beam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beam.swift; sourceTree = "<group>"; };
+		878B00FD1E4BA527005EDFFD /* Pendulum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pendulum.swift; sourceTree = "<group>"; };
+		87DC85131E34BA4B0068555D /* Phi6 Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phi6 Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DC85161E34BA4B0068555D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87DC85181E34BA4B0068555D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		87DC851A1E34BA4B0068555D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		87DC851C1E34BA4B0068555D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		87DC851E1E34BA4B0068555D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		87DC85211E34BA4B0068555D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87DC85231E34BA4B0068555D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87DC85261E34BA4B0068555D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87DC85281E34BA4B0068555D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FACC341E449400005B6F67 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		94F65B8EB1411AF96B6EE6A9 /* Pods_Phi6_Alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phi6_Alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEB1B75A34ACEC9819393C8 /* Pods-Phi6 Alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phi6 Alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phi6 Alpha/Pods-Phi6 Alpha.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87DC85101E34BA4B0068555D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8167535D1E4C9E37002219DE /* AVFoundation.framework in Frameworks */,
+				F2B4F48959F70FA4D552ED6D /* Pods_Phi6_Alpha.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0451B65C2D69E218970AF3EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127D1FCEE4984D940F70ABB6 /* Pods-Phi6 Alpha.debug.xcconfig */,
+				FAEB1B75A34ACEC9819393C8 /* Pods-Phi6 Alpha.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1907C0E5F0F8AFAEB31C134A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8167535C1E4C9E37002219DE /* AVFoundation.framework */,
+				94F65B8EB1411AF96B6EE6A9 /* Pods_Phi6_Alpha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A00DAD21E48C15200F13164 /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				8715F6071E368279001E2DEA /* ObjectTableViewCell.swift */,
+				8731F2FF1E4129A5002C5253 /* SensorTableViewCell.swift */,
+			);
+			name = CellViews;
+			sourceTree = "<group>";
+		};
+		5A3C24E91E6484BF00BC0C30 /* Rope tools */ = {
+			isa = PBXGroup;
+			children = (
+				5A3C24EA1E6484DD00BC0C30 /* RopeClass.swift */,
+				5A3C24EC1E64851500BC0C30 /* Constants.swift */,
+				5A3C24EE1E64861400BC0C30 /* MainMenuObjectController.swift */,
+				5A3C24F01E64864200BC0C30 /* RopeData.plist */,
+			);
+			name = "Rope tools";
+			sourceTree = "<group>";
+		};
+		5ABEEA281E65864C00B8A8EC /* Particle */ = {
+			isa = PBXGroup;
+			children = (
+				5ABEEA221E65864200B8A8EC /* Particle.png */,
+				5ABEEA231E65864200B8A8EC /* Particle.sks */,
+				5ABEEA241E65864200B8A8EC /* Particle@2x.png */,
+			);
+			name = Particle;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8731F2AF1E40D649002C5253 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CB7401E659F9300A63B82 /* BaseTutorialScene.swift */,
+				3F5DAC2B1E4CD2EA00AE47D1 /* Lever.swift */,
+				8731F2B51E40D6FE002C5253 /* GameObject.swift */,
+				87283AB81E4331DE00FDEE95 /* GameObjectNode.swift */,
+				3093494C1E449B920006F622 /* Arrow.swift */,
+				878B00F91E4B929B005EDFFD /* Fulcrum.swift */,
+				878B00FB1E4B9313005EDFFD /* Beam.swift */,
+				878B00FD1E4BA527005EDFFD /* Pendulum.swift */,
+				8731F2D21E40D746002C5253 /* SimpleObject */,
+				8731F2D31E40D827002C5253 /* Logic */,
+				8731F2D41E40D82B002C5253 /* Sensor */,
+				5A72AB921E44C49700227938 /* PhysicsCategory.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8731F2B01E40D64D002C5253 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CB7441E65B00900A63B82 /* LSCTutorial.sks */,
+				5A9CB7451E65B00900A63B82 /* LSCTutorial.swift */,
+				5A9CB7461E65B00900A63B82 /* SimpleStateMachine.swift */,
+				5A9CB7471E65B00900A63B82 /* sksTutorial1.sks */,
+				5A9CB7481E65B00900A63B82 /* sksTutorial1.swift */,
+				5A9CB7491E65B00900A63B82 /* TutorialFunctions.swift */,
+				5A9CB74A1E65B00900A63B82 /* viewTutorialInfo.swift */,
+				5ABEEA281E65864C00B8A8EC /* Particle */,
+				5A00DAD21E48C15200F13164 /* CellViews */,
+				87DC851C1E34BA4B0068555D /* GameScene.swift */,
+				87DC85181E34BA4B0068555D /* GameScene.sks */,
+				5A3C24F21E64D3E000BC0C30 /* MainMenuObjectController.sks */,
+				87DC85201E34BA4B0068555D /* Main.storyboard */,
+				87DC85251E34BA4B0068555D /* LaunchScreen.storyboard */,
+				87DC85231E34BA4B0068555D /* Assets.xcassets */,
+				8167535E1E4C9EC8002219DE /* Bag Raiders - Shooting Stars.mp3 */,
+				81982EFA1E4CA86F00E592F5 /* Crypt of the Necrodancer OST - Portabellohead (2-3).mp3 */,
+				81982EFC1E4CB0CA00E592F5 /* cutted.mp3 */,
+				81982EFE1E4CB2B100E592F5 /* button-37.mp3 */,
+				81982F001E4CB47C00E592F5 /* button-27.mp3 */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8731F2B11E40D654002C5253 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87DC851A1E34BA4B0068555D /* Actions.sks */,
+				3084EA031E487A0E0064C869 /* LevelViewController.swift */,
+				30AB47C51E49D90400671FA0 /* TheoryViewController.swift */,
+				8731F2D51E40DD5C002C5253 /* CarusiellViewController.swift */,
+				8731F2D71E40DD5C002C5253 /* MainViewController.swift */,
+				87DC851E1E34BA4B0068555D /* GameViewController.swift */,
+				8715F6091E36828A001E2DEA /* ObjectTableViewController.swift */,
+				8731F2FD1E412965002C5253 /* SensorTableViewController.swift */,
+				5A4A66731E4B615700C137B8 /* LessonViewController.swift */,
+				5AD999DC1E5F2D3F003524EB /* PcScreenViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8731F2D21E40D746002C5253 /* SimpleObject */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CB7421E65A6BB00A63B82 /* PhisphereRed.swift */,
+				87283ABA1E43325100FDEE95 /* Character.swift */,
+				87283ABB1E43325100FDEE95 /* Obstacle.swift */,
+				8731F2BF1E40D6FE002C5253 /* SimpleObject.swift */,
+				8731F2BD1E40D6FE002C5253 /* Rectangle.swift */,
+				87FACC341E449400005B6F67 /* Circle.swift */,
+				8731F2C11E40D6FE002C5253 /* Triangle.swift */,
+			);
+			name = SimpleObject;
+			sourceTree = "<group>";
+		};
+		8731F2D31E40D827002C5253 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8731F2B91E40D6FE002C5253 /* Logic.swift */,
+				8731F2B21E40D6FE002C5253 /* AndGate.swift */,
+				8731F2BB1E40D6FE002C5253 /* OrGate.swift */,
+				8731F2BA1E40D6FE002C5253 /* NotGate.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		8731F2D41E40D82B002C5253 /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				5A9CB73E1E659F4E00A63B82 /* LaserPhotoCell.swift */,
+				8731F2BE1E40D6FE002C5253 /* Sensor.swift */,
+				8731F2B71E40D6FE002C5253 /* LaserRangefinder.swift */,
+				8731F2BC1E40D6FE002C5253 /* PhotoCell.swift */,
+				8731F2B61E40D6FE002C5253 /* LaserAccelerometer.swift */,
+				8731F2B81E40D6FE002C5253 /* LoadCell.swift */,
+				8731F2B31E40D6FE002C5253 /* Chronometer.swift */,
+				8731F2C01E40D6FE002C5253 /* SpeedCamera.swift */,
+			);
+			name = Sensor;
+			sourceTree = "<group>";
+		};
+		8731F2DB1E40E0D1002C5253 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8731F2E11E40E184002C5253 /* EasyAnimation */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		8731F2E11E40E184002C5253 /* EasyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8731F2E21E40E209002C5253 /* EAAnimationFuture.swift */,
+				8731F2E31E40E209002C5253 /* EasyAnimation.h */,
+				8731F2E41E40E209002C5253 /* EasyAnimation.swift */,
+				8731F2E51E40E209002C5253 /* Info-tvOS.plist */,
+				8731F2E61E40E209002C5253 /* Info.plist */,
+				8731F2EB1E40E2C2002C5253 /* RBBSpringAnimation */,
+			);
+			name = EasyAnimation;
+			sourceTree = "<group>";
+		};
+		8731F2EB1E40E2C2002C5253 /* RBBSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8731F2EC1E40E2D1002C5253 /* LICENSE */,
+				8731F2ED1E40E2D1002C5253 /* RBBBlockBasedArray.swift */,
+				8731F2EE1E40E2D1002C5253 /* RBBLinearInterpolation.swift */,
+				8731F2EF1E40E2D1002C5253 /* RBBSpringAnimation.swift */,
+			);
+			name = RBBSpringAnimation;
+			sourceTree = "<group>";
+		};
+		87DC850A1E34BA4B0068555D = {
+			isa = PBXGroup;
+			children = (
+				5A00863E1E4D2E6500035DC2 /* Localizable.strings */,
+				301045811E4B355500D27A48 /* SourceSansPro-ExtraLight.ttf */,
+				301045821E4B355500D27A48 /* SourceSansPro-Light.ttf */,
+				301045831E4B355500D27A48 /* SourceSansPro-Regular.ttf */,
+				8731F2DB1E40E0D1002C5253 /* Libraries */,
+				87DC85151E34BA4B0068555D /* Phi6 Alpha */,
+				87DC85141E34BA4B0068555D /* Products */,
+				0451B65C2D69E218970AF3EF /* Pods */,
+				1907C0E5F0F8AFAEB31C134A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87DC85141E34BA4B0068555D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87DC85131E34BA4B0068555D /* Phi6 Alpha.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87DC85151E34BA4B0068555D /* Phi6 Alpha */ = {
+			isa = PBXGroup;
+			children = (
+				5A3C24E91E6484BF00BC0C30 /* Rope tools */,
+				87DC85161E34BA4B0068555D /* AppDelegate.swift */,
+				8731F2AF1E40D649002C5253 /* Model */,
+				8731F2B01E40D64D002C5253 /* View */,
+				8731F2B11E40D654002C5253 /* Controller */,
+				8715F5FB1E36510F001E2DEA /* Singleton.swift */,
+				5A9CB73C1E659B6100A63B82 /* ContextualMenu.gif */,
+				87DC85281E34BA4B0068555D /* Info.plist */,
+				5A00DAD31E48C16B00F13164 /* Adder.swift */,
+				5AD999B51E5D9837003524EB /* Initializer.swift */,
+				5A4A66711E4B60F600C137B8 /* CategoryLesson.swift */,
+				5A2F7E031E4BD06900FEDC4A /* Excercise.swift */,
+				5AD999B31E5D899E003524EB /* JsonReadWrite.swift */,
+				5A3C24E71E6442CF00BC0C30 /* SharedViewController.swift */,
+			);
+			path = "Phi6 Alpha";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87DC85121E34BA4B0068555D /* Phi6 Alpha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DC852B1E34BA4B0068555D /* Build configuration list for PBXNativeTarget "Phi6 Alpha" */;
+			buildPhases = (
+				1E05970C5F09F9A84CE9B8E4 /* [CP] Check Pods Manifest.lock */,
+				87DC850F1E34BA4B0068555D /* Sources */,
+				87DC85101E34BA4B0068555D /* Frameworks */,
+				87DC85111E34BA4B0068555D /* Resources */,
+				C245FDDD0E1F94A12C002752 /* [CP] Embed Pods Frameworks */,
+				1ADB4BA42948547A58207BC2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Phi6 Alpha";
+			productName = "Phi6 Alpha";
+			productReference = 87DC85131E34BA4B0068555D /* Phi6 Alpha.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87DC850B1E34BA4B0068555D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Salvatore Capuozzo";
+				TargetAttributes = {
+					87DC85121E34BA4B0068555D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2AT3SG7857;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 87DC850E1E34BA4B0068555D /* Build configuration list for PBXProject "Phi6 Alpha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				it,
+			);
+			mainGroup = 87DC850A1E34BA4B0068555D;
+			productRefGroup = 87DC85141E34BA4B0068555D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87DC85121E34BA4B0068555D /* Phi6 Alpha */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87DC85111E34BA4B0068555D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A00863C1E4D2E6500035DC2 /* Localizable.strings in Resources */,
+				8731F2E91E40E209002C5253 /* Info-tvOS.plist in Resources */,
+				87DC85221E34BA4B0068555D /* Main.storyboard in Resources */,
+				5A3C24F31E64D3E000BC0C30 /* MainMenuObjectController.sks in Resources */,
+				5A9CB74B1E65B00900A63B82 /* LSCTutorial.sks in Resources */,
+				8731F2F01E40E2D1002C5253 /* LICENSE in Resources */,
+				81982EFD1E4CB0CA00E592F5 /* cutted.mp3 in Resources */,
+				301045851E4B355500D27A48 /* SourceSansPro-Light.ttf in Resources */,
+				5ABEEA261E65864200B8A8EC /* Particle.sks in Resources */,
+				5A3C24F11E64864200BC0C30 /* RopeData.plist in Resources */,
+				301045841E4B355500D27A48 /* SourceSansPro-ExtraLight.ttf in Resources */,
+				87DC85191E34BA4B0068555D /* GameScene.sks in Resources */,
+				81982EFF1E4CB2B100E592F5 /* button-37.mp3 in Resources */,
+				5A9CB74E1E65B00900A63B82 /* sksTutorial1.sks in Resources */,
+				8167535F1E4C9EC8002219DE /* Bag Raiders - Shooting Stars.mp3 in Resources */,
+				5A9CB73D1E659B6100A63B82 /* ContextualMenu.gif in Resources */,
+				301045861E4B355500D27A48 /* SourceSansPro-Regular.ttf in Resources */,
+				87DC85241E34BA4B0068555D /* Assets.xcassets in Resources */,
+				87DC85271E34BA4B0068555D /* LaunchScreen.storyboard in Resources */,
+				81982EFB1E4CA86F00E592F5 /* Crypt of the Necrodancer OST - Portabellohead (2-3).mp3 in Resources */,
+				81982F011E4CB47C00E592F5 /* button-27.mp3 in Resources */,
+				5ABEEA271E65864200B8A8EC /* Particle@2x.png in Resources */,
+				87DC851B1E34BA4B0068555D /* Actions.sks in Resources */,
+				8731F2EA1E40E209002C5253 /* Info.plist in Resources */,
+				5ABEEA251E65864200B8A8EC /* Particle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ADB4BA42948547A58207BC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phi6 Alpha/Pods-Phi6 Alpha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E05970C5F09F9A84CE9B8E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C245FDDD0E1F94A12C002752 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phi6 Alpha/Pods-Phi6 Alpha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87DC850F1E34BA4B0068555D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A9CB7431E65A6BB00A63B82 /* PhisphereRed.swift in Sources */,
+				878B00FE1E4BA527005EDFFD /* Pendulum.swift in Sources */,
+				5A00DAD41E48C16B00F13164 /* Adder.swift in Sources */,
+				87FACC351E449400005B6F67 /* Circle.swift in Sources */,
+				8731F2CA1E40D6FE002C5253 /* NotGate.swift in Sources */,
+				8731F2D11E40D6FE002C5253 /* Triangle.swift in Sources */,
+				8731F2C21E40D6FE002C5253 /* AndGate.swift in Sources */,
+				5A4A66721E4B60F600C137B8 /* CategoryLesson.swift in Sources */,
+				5A3C24ED1E64851500BC0C30 /* Constants.swift in Sources */,
+				878B00FA1E4B929B005EDFFD /* Fulcrum.swift in Sources */,
+				8731F2C81E40D6FE002C5253 /* LoadCell.swift in Sources */,
+				5A9CB74C1E65B00900A63B82 /* LSCTutorial.swift in Sources */,
+				8731F2CC1E40D6FE002C5253 /* PhotoCell.swift in Sources */,
+				5A4A66741E4B615700C137B8 /* LessonViewController.swift in Sources */,
+				3F5DAC2C1E4CD2EA00AE47D1 /* Lever.swift in Sources */,
+				8715F5FC1E36510F001E2DEA /* Singleton.swift in Sources */,
+				87283ABD1E43325100FDEE95 /* Obstacle.swift in Sources */,
+				87DC851D1E34BA4B0068555D /* GameScene.swift in Sources */,
+				8731F2D01E40D6FE002C5253 /* SpeedCamera.swift in Sources */,
+				8731F2C71E40D6FE002C5253 /* LaserRangefinder.swift in Sources */,
+				3084EA041E487A0E0064C869 /* LevelViewController.swift in Sources */,
+				5A9CB74F1E65B00900A63B82 /* sksTutorial1.swift in Sources */,
+				5AD999DD1E5F2D3F003524EB /* PcScreenViewController.swift in Sources */,
+				5A9CB73F1E659F4E00A63B82 /* LaserPhotoCell.swift in Sources */,
+				8731F2E71E40E209002C5253 /* EAAnimationFuture.swift in Sources */,
+				87DC851F1E34BA4B0068555D /* GameViewController.swift in Sources */,
+				8731F2F31E40E2D1002C5253 /* RBBSpringAnimation.swift in Sources */,
+				5A9CB7501E65B00900A63B82 /* TutorialFunctions.swift in Sources */,
+				8731F2C91E40D6FE002C5253 /* Logic.swift in Sources */,
+				8731F2C51E40D6FE002C5253 /* GameObject.swift in Sources */,
+				3093494D1E449B920006F622 /* Arrow.swift in Sources */,
+				87283ABC1E43325100FDEE95 /* Character.swift in Sources */,
+				5A9CB7511E65B00900A63B82 /* viewTutorialInfo.swift in Sources */,
+				8731F2C61E40D6FE002C5253 /* LaserAccelerometer.swift in Sources */,
+				5A3C24EF1E64861400BC0C30 /* MainMenuObjectController.swift in Sources */,
+				8731F2F11E40E2D1002C5253 /* RBBBlockBasedArray.swift in Sources */,
+				8731F3001E4129A5002C5253 /* SensorTableViewCell.swift in Sources */,
+				87283AB91E4331DE00FDEE95 /* GameObjectNode.swift in Sources */,
+				8731F2DA1E40DD5C002C5253 /* MainViewController.swift in Sources */,
+				5A72AB931E44C49700227938 /* PhysicsCategory.swift in Sources */,
+				8731F2CE1E40D6FE002C5253 /* Sensor.swift in Sources */,
+				5AD999B61E5D9837003524EB /* Initializer.swift in Sources */,
+				8731F2CF1E40D6FE002C5253 /* SimpleObject.swift in Sources */,
+				8731F2CD1E40D6FE002C5253 /* Rectangle.swift in Sources */,
+				5AD999B41E5D899E003524EB /* JsonReadWrite.swift in Sources */,
+				8731F2E81E40E209002C5253 /* EasyAnimation.swift in Sources */,
+				878B00FC1E4B9313005EDFFD /* Beam.swift in Sources */,
+				8731F2FE1E412965002C5253 /* SensorTableViewController.swift in Sources */,
+				5A9CB7411E659F9300A63B82 /* BaseTutorialScene.swift in Sources */,
+				5A3C24EB1E6484DD00BC0C30 /* RopeClass.swift in Sources */,
+				8731F2D81E40DD5C002C5253 /* CarusiellViewController.swift in Sources */,
+				5A3C24E81E6442CF00BC0C30 /* SharedViewController.swift in Sources */,
+				30AB47C61E49D90400671FA0 /* TheoryViewController.swift in Sources */,
+				5A2F7E041E4BD06900FEDC4A /* Excercise.swift in Sources */,
+				87DC85171E34BA4B0068555D /* AppDelegate.swift in Sources */,
+				8731F2F21E40E2D1002C5253 /* RBBLinearInterpolation.swift in Sources */,
+				8731F2CB1E40D6FE002C5253 /* OrGate.swift in Sources */,
+				8731F2C31E40D6FE002C5253 /* Chronometer.swift in Sources */,
+				5A9CB74D1E65B00900A63B82 /* SimpleStateMachine.swift in Sources */,
+				8715F6081E368279001E2DEA /* ObjectTableViewCell.swift in Sources */,
+				8715F60A1E36828A001E2DEA /* ObjectTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A00863E1E4D2E6500035DC2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A00863D1E4D2E6500035DC2 /* Base */,
+				5A00863F1E4D2E6600035DC2 /* en */,
+				5A0086401E4D2E6700035DC2 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		87DC85201E34BA4B0068555D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87DC85211E34BA4B0068555D /* Base */,
+				5A0086381E4D2E5600035DC2 /* it */,
+				5A0086421E4D2ECA00035DC2 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87DC85251E34BA4B0068555D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87DC85261E34BA4B0068555D /* Base */,
+				5A0086391E4D2E5700035DC2 /* it */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87DC85291E34BA4B0068555D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87DC852A1E34BA4B0068555D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87DC852C1E34BA4B0068555D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127D1FCEE4984D940F70ABB6 /* Pods-Phi6 Alpha.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2AT3SG7857;
+				INFOPLIST_FILE = "Phi6 Alpha/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.Phi6-Alpha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Phi6 Alpha-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		87DC852D1E34BA4B0068555D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEB1B75A34ACEC9819393C8 /* Pods-Phi6 Alpha.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2AT3SG7857;
+				INFOPLIST_FILE = "Phi6 Alpha/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "it.Phi6-Alpha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Phi6 Alpha-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87DC850E1E34BA4B0068555D /* Build configuration list for PBXProject "Phi6 Alpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DC85291E34BA4B0068555D /* Debug */,
+				87DC852A1E34BA4B0068555D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87DC852B1E34BA4B0068555D /* Build configuration list for PBXNativeTarget "Phi6 Alpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DC852C1E34BA4B0068555D /* Debug */,
+				87DC852D1E34BA4B0068555D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87DC850B1E34BA4B0068555D /* Project object */;
+}

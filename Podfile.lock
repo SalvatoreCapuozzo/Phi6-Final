@@ -1,0 +1,24 @@
+PODS:
+  - iCarousel (1.8.3)
+  - iOSContextualMenu (1.1.8)
+  - MTCircularSlider (0.2.14)
+  - SwiftyGif (3.0.0)
+  - VerticalSlider (1.0.0)
+
+DEPENDENCIES:
+  - iCarousel
+  - iOSContextualMenu
+  - MTCircularSlider
+  - SwiftyGif
+  - VerticalSlider
+
+SPEC CHECKSUMS:
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  iOSContextualMenu: d5e7e08d232b8c2e04183060759d794df7b415ef
+  MTCircularSlider: 9df5649916d97de7c768e0f611812572c4554c00
+  SwiftyGif: d6b4d63de2a2a5134d8b54ba5719837319d77ef0
+  VerticalSlider: d0e269208ce7aa98e0273c0d244e9625d603b75e
+
+PODFILE CHECKSUM: 704c8b561374068764bd0cf7e50138984bbae248
+
+COCOAPODS: 1.1.1

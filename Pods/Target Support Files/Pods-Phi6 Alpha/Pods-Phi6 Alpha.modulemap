@@ -1,0 +1,6 @@
+framework module Pods_Phi6_Alpha {
+  umbrella header "Pods-Phi6 Alpha-umbrella.h"
+
+  export *
+  module * { export * }
+}
