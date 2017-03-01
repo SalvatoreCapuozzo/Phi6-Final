@@ -321,7 +321,7 @@ class Adder{
         sprite.size.height = scene.objectWidth
         sprite.xScale = 0.04
         sprite.yScale = 0.04
-        var diameter = sprite.size.width
+        let diameter = sprite.size.width
         sprite.physicsBody = SKPhysicsBody(circleOfRadius: diameter/2)
         sprite.physicsBody?.affectedByGravity = false
         sprite.physicsBody?.isDynamic = false

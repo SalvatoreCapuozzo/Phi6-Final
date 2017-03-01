@@ -22,7 +22,7 @@ class sksTutorial1 : BaseTutorialScene
         
         let step0 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "Hey, you! Yes, you!\nWelcome to Phi6's Basics Tutorial!\nI'm going to guide you through the interface and the interactions you can accomplish within the simulator.\nTap to proceed.", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "Hey, you! Yes, you!\nWelcome to Phi6's Basics Tutorial!\nI'm going to guide you through the interface and the interactions you can accomplish within the simulator.\nTap to proceed.", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0), scene: self)
         }
         
 //        let step0 = SimpleFSM_State(stateType: .FOCUS) { 
@@ -32,7 +32,7 @@ class sksTutorial1 : BaseTutorialScene
         
         let step1 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "This right here is the PhiSphere, you're going to be familiar with it soon.", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "This right here is the PhiSphere, you're going to be familiar with it soon.", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0), scene: self)
             
             Point(pointer: self.viewController.pointerImg, obj: self.childNode(withName: "phisphere")!, offset: CGPoint(x: self.frame.size.width / 2 + 7, y: 40))
             
@@ -46,28 +46,28 @@ class sksTutorial1 : BaseTutorialScene
         
         let step2 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.viewController.infoButton, text: "By tapping here, you can find help about the current simulation.\nTry it!", offset: CGPoint(x: 0, y: 0), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.infoButton, text: "By tapping here, you can find help about the current simulation.\nTry it!", offset: CGPoint(x: 0, y: 0), scene: self)
             
             self.viewController.infoButton.isEnabled = true
         }
         
         let step3 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.viewController.slowMotionButton, text: "This one right here allows you to slow the simulation's time.\nIt's turned OFF by default.", offset: CGPoint(x: 0, y: self.viewController.slowMotionButton.frame.height/4 + 5), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.slowMotionButton, text: "This one right here allows you to slow the simulation's time.\nIt's turned OFF by default.", offset: CGPoint(x: 0, y: self.viewController.slowMotionButton.frame.height/4 + 5), scene: self)
             
             self.viewController.slowMotionButton.isEnabled = true
         }
         
         let step4 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.viewController.gravityButton, text: "Fancy using no gravity at all? Fear no more!\nTapping this, you can switch gravity ON and OFF.", offset: CGPoint(x: self.frame.size.width - 2*self.viewController.gravityButton.frame.width + 5, y: 2), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.gravityButton, text: "Fancy using no gravity at all? Fear no more!\nTapping this, you can switch gravity ON and OFF.", offset: CGPoint(x: self.frame.size.width - 2*self.viewController.gravityButton.frame.width + 5, y: 2), scene: self)
             
             self.viewController.gravityButton.isEnabled = true
         }
         
         let step5 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.viewController.slowMotionButton, text: "These 2 neat arrow buttons allow you to turn ON and OFF the graphical visualization of the acceleration and velocity vectors.", offset: CGPoint(x: 2*self.viewController.gravityButton.frame.width - 5, y: self.viewController.slowMotionButton.frame.height/4 + 5 - 2*self.viewController.gravityButton.frame.height + 10), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.slowMotionButton, text: "These 2 neat arrow buttons allow you to turn ON and OFF the graphical visualization of the acceleration and velocity vectors.", offset: CGPoint(x: 2*self.viewController.gravityButton.frame.width - 5, y: self.viewController.slowMotionButton.frame.height/4 + 5 - 2*self.viewController.gravityButton.frame.height + 10), scene: self)
             
             
             //CGPoint(x: self.frame.size.width - 2*self.viewController.velButton.frame.width, y: -self.frame.size.height + 2*self.viewController.velButton.frame.height)
@@ -77,7 +77,7 @@ class sksTutorial1 : BaseTutorialScene
         
         let step6 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.viewController.pauseButton, text: "You can run the current simulation with this button!", offset: CGPoint(x: self.frame.size.width - 2*self.viewController.pauseButton.frame.width + 5, y: -self.frame.size.height + 2*self.viewController.pauseButton.frame.height + 9), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.pauseButton, text: "You can run the current simulation with this button!", offset: CGPoint(x: self.frame.size.width - 2*self.viewController.pauseButton.frame.width + 5, y: -self.frame.size.height + 2*self.viewController.pauseButton.frame.height + 9), scene: self)
             
             self.viewController.pauseButton.isEnabled = true
         }
@@ -92,19 +92,19 @@ class sksTutorial1 : BaseTutorialScene
         
         let step8 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Tap(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "Nice try!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
+            Tap(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "Nice try!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
         }
         
         let step9 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Tap(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "Let's make things a bit more fun, shall we?\nI'll make the PhiSphere editable. Just. For. YOU!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
+            Tap(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "Let's make things a bit more fun, shall we?\nI'll make the PhiSphere editable. Just. For. YOU!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
             
             
         }
         
         let step10 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Tap(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "Tap and hold on the PhiSphere to move it around!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
+            Tap(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "Tap and hold on the PhiSphere to move it around!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
             
             Point(pointer: self.viewController.pointerImg, obj: self.childNode(withName: "phisphere")!, offset: CGPoint(x: self.frame.size.width / 2 + 7, y: 40))
             
@@ -144,7 +144,7 @@ class sksTutorial1 : BaseTutorialScene
         {
             self.viewController.scene.deleteSliders()
             
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "Good job!\nNow tap again on it to edit it.\nI'll show you how!\nJust tap onto the slider's handle and move it on its line to change PhiSphere's properties.", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "Good job!\nNow tap again on it to edit it.\nI'll show you how!\nJust tap onto the slider's handle and move it on its line to change PhiSphere's properties.", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0), scene: self)
             print(self.viewController.scene.sliderInitV.frame.origin)
         }
         
@@ -192,7 +192,7 @@ class sksTutorial1 : BaseTutorialScene
         let step15 = SimpleFSM_State(stateType: .FOCUS)
         {
             self.viewController.simulatorTest = (false, false)
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.viewController.pauseButton, text: "Try the changes by running the simulation again!", offset: CGPoint(x: self.frame.size.width - 2*self.viewController.pauseButton.frame.width + 5, y: -self.frame.size.height + 2*self.viewController.pauseButton.frame.height + 9), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.pauseButton, text: "Try the changes by running the simulation again!", offset: CGPoint(x: self.frame.size.width - 2*self.viewController.pauseButton.frame.width + 5, y: -self.frame.size.height + 2*self.viewController.pauseButton.frame.height + 9), scene: self)
             
             self.viewController.pauseButton.isEnabled = true
         }
@@ -209,17 +209,17 @@ class sksTutorial1 : BaseTutorialScene
         
         let step17 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Tap(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "Congratulations!\nNow you know the basics of Phi6's simulator.\nOn the left you can find a blocknote on which you can copy and paste stuff as needed, simply drag it from its position!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
+            Tap(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "Congratulations!\nNow you know the basics of Phi6's simulator.\nOn the left you can find a blocknote on which you can copy and paste stuff as needed, simply drag it from its position!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
         }
         
         let step18 = SimpleFSM_State(stateType: .FOCUS)
         {
             self.neededObject = "object"
-            Tap(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "Now get ready for the juicy part of this tutorial:...", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
+            Tap(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "Now get ready for the juicy part of this tutorial:...", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
         }
         
         let step19 = SimpleFSM_State(stateType: .FOCUS) {
-            Tap(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.viewController.infoButton, text: "... the Object Contextual Menu!\nOpen in by holding your finger on whatever part of the screen for 2 seconds and select the 'Rectangular Block' by releasing the finger.", offset: CGPoint(x: self.frame.size.width / 2, y: 0))
+            Tap(view: self.viewController.tutorialInfoView, obj: self.viewController.infoButton, text: "... the Object Contextual Menu!\nOpen in by holding your finger on whatever part of the screen for 2 seconds and select the 'Rectangular Block' by releasing the finger.", offset: CGPoint(x: self.frame.size.width / 2, y: 0))
             
         }
         
@@ -247,12 +247,12 @@ class sksTutorial1 : BaseTutorialScene
         }
         
         let step21 = SimpleFSM_State(stateType: .FOCUS) {
-            Focus(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "object")!, text: "This object is a static block. If you tap on it, sliders for width, height, rotation and friction of the block will appear.\nHave fun with these sliders in the Sandbox!", offset: CGPoint(x: self.frame.size.width / 2, y: 0), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "object")!, text: "This object is a static block. If you tap on it, sliders for width, height, rotation and friction of the block will appear.\nHave fun with these sliders in the Sandbox!", offset: CGPoint(x: self.frame.size.width / 2, y: 0), scene: self)
         }
         
         let step22 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Tap(view: self.viewController.tutorialInfoView as! viewTutorialInfo, obj: self.childNode(withName: "phisphere")!, text: "One last thing: remember the Info button on top left? It had a hint ;)\nGo and have fun!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
+            Tap(view: self.viewController.tutorialInfoView, obj: self.childNode(withName: "phisphere")!, text: "One last thing: remember the Info button on top left? It had a hint ;)\nGo and have fun!", offset: CGPoint(x: self.frame.size.width / 2 + self.phisphere.size.width, y: 0))
             DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
                 self.viewController.goBack()
             })

@@ -151,7 +151,7 @@ func Point(pointer: UIImageView, offset: CGPoint, scene: BaseTutorialScene)
 
 func Tap(pointer: UIImageView, pointerTap: UIImageView, offset: CGPoint, scene: BaseTutorialScene)
 {
-    var pos = CGPoint(x: 0, y: 0)
+    _ = CGPoint(x: 0, y: 0)
     pointerTap.layer.position = pointer.layer.position
     pointerTap.layer.zPosition = 2
     pointerTap.isHidden = false
@@ -160,7 +160,7 @@ func Tap(pointer: UIImageView, pointerTap: UIImageView, offset: CGPoint, scene: 
 
 func Hold(pointer: UIImageView, pointerHold: UIImageView, offset: CGPoint, scene: BaseTutorialScene)
 {
-    var pos = CGPoint(x: 0, y: 0)
+    _ = CGPoint(x: 0, y: 0)
     pointerHold.layer.position = pointer.layer.position
     let gifManager = SwiftyGifManager(memoryLimit:20)
     let contMenu = UIImage(gifName: "ContextualMenu")

@@ -35,6 +35,7 @@ class PcScreenViewController: UIViewController, iCarouselDelegate, iCarouselData
         super.viewDidLoad()
         view.backgroundColor = UIColor.clear
         view.alpha = 0
+        lessonTextView?.isHidden = true
         
         CategoryView.backgroundColor = UIColor.clear
         
@@ -104,6 +105,7 @@ class PcScreenViewController: UIViewController, iCarouselDelegate, iCarouselData
         lessonLabel.text = "Lesson \(i)"
         lessonLabel.textColor = UIColor.white
         lessonLabel.textAlignment = .left
+        lessonLabel.alpha = 1
         
         return lessonLabel
     }
@@ -119,6 +121,14 @@ class PcScreenViewController: UIViewController, iCarouselDelegate, iCarouselData
         lessonTextView.isEditable = false
         
         return lessonTextView
+    }
+    
+    func setTextInView(text: String){
+        self.lessonTextView?.text = text
+    }
+    
+    func setAlphaLabel(alpha: Int){
+        lessonLabel?.alpha = 1
     }
 }
 

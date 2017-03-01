@@ -56,6 +56,7 @@ class GameViewController: UIViewController, SKSceneDelegate, UIGestureRecognizer
     var mode: String?
     var category: Int?
     var levelNumber: Int?
+    var maxLessonNumbers: Int?
     var solutionShowed: Bool = false
     
     @IBOutlet var excerciseTextView: UITextView!
@@ -116,6 +117,7 @@ class GameViewController: UIViewController, SKSceneDelegate, UIGestureRecognizer
         self.blockNotes.layer.borderColor = UIColor.black.cgColor
         self.excerciseTextView.layer.borderWidth = 1.5
         self.excerciseTextView.layer.borderColor = UIColor.black.cgColor
+        self.excerciseTextView.isHidden = true
         
         let path = Bundle.main.path(forResource: "cutted", ofType: "mp3")
         let audioFileUrl = NSURL(fileURLWithPath: path!)
@@ -141,16 +143,29 @@ class GameViewController: UIViewController, SKSceneDelegate, UIGestureRecognizer
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-//            if let scene = GameScene(fileNamed: "GameScene") {
-            if let scene = GameScene(fileNamed: "sksTutorial1"){
-                // Set the scale mode to scale to fit the window
-                self.scene = scene
-                scene.levelSelected = String(describing: self.levelNumber)
-                scene.scaleMode = .aspectFill
-                scene.viewController = self
-                
-                // Present the scene
-                view.presentScene(scene)
+            
+            if self.mode == "sandbox"{
+                if let scene = GameScene(fileNamed: "sksTutorial1"){
+                    self.scene = scene
+                    scene.levelSelected = String(describing: self.levelNumber)
+                    scene.scaleMode = .aspectFit
+                    scene.viewController = self
+                    
+                    view.presentScene(scene)
+                }
+            }
+            else if self.mode == "learning"{
+            
+                if let scene = GameScene(fileNamed: "GameScene") {
+                    // Set the scale mode to scale to fit the window
+                    self.scene = scene
+                    scene.levelSelected = String(describing: self.levelNumber)
+                    scene.scaleMode = .aspectFill
+                    scene.viewController = self
+                    
+                    // Present the scene
+                    view.presentScene(scene)
+                }
             }
             
             view.ignoresSiblingOrder = true
@@ -631,7 +646,7 @@ class GameViewController: UIViewController, SKSceneDelegate, UIGestureRecognizer
         
         for object in Singleton.shared.objects {
             if object.name == "phiSphereRed" {
-                var phiSphereRed = object as! PhisphereRed
+                let phiSphereRed = object as! PhisphereRed
                 // The old final velocity becomes the new initial velocity
                 phiSphereRed.beforeAfterVelocityDx["initial"] = phiSphereRed.beforeAfterVelocityDx["final"]
                 phiSphereRed.beforeAfterVelocityDy["initial"] = phiSphereRed.beforeAfterVelocityDy["final"]

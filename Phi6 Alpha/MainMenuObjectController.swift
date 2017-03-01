@@ -71,7 +71,7 @@ class MainMenuObjectController: SKScene , SKPhysicsContactDelegate
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             let startPoint = touch.location(in: self)
-            let endPoint = touch.previousLocation(in: self)
+            _ = touch.previousLocation(in: self)
             
             // check if vine cut
 //            scene?.physicsWorld.enumerateBodies(alongRayStart: startPoint, end: endPoint,

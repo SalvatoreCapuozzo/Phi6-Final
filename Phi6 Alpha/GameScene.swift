@@ -156,8 +156,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, PcScreenViewDelegate {
         pcScreenController?.mode = viewController.mode
         pcScreenController?.category = viewController.category
         pcScreenController?.view.addGestureRecognizer(self.initPinchGesture())
-        
-        
     }
     
     func initializeAllObjects(_ initializer: Initializer){
@@ -222,6 +220,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate, PcScreenViewDelegate {
             UIView.animate(withDuration: 1, animations: {
                 
                 self.pcScreenController?.view.alpha = 1
+//                self.pcScreenController?.lessonLabel?.alpha = 1
+//                self.pcScreenController?.setAlphaLabel(alpha: 1)
+//                self.pcScreenController?.lessonTextView?.alpha = 1
+//                self.pcScreenController?.pageControl.alpha = 1
+                
             })
         }
         else{
@@ -558,7 +561,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, PcScreenViewDelegate {
                     } else {
                         object.physicsBody?.affectedByGravity = false
                     }
-                    var phiSphereRed = object as! PhisphereRed
+                    let phiSphereRed = object as! PhisphereRed
                     // Vettore velocità
                     let startV = CGPoint(x: object.position.x + (self.frame.size.width / 2), y: -object.position.y + (self.frame.size.height / 2))
                     
@@ -712,7 +715,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, PcScreenViewDelegate {
                     }
                 }
                 else if object.name == "phiSphereRed"{
-                    var phiSphereRed = object as! PhisphereRed
+                    let phiSphereRed = object as! PhisphereRed
                     phiSphereRed.pausePosition = object.position
                 }
             }

@@ -432,8 +432,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="playbutton"/>
                                 <connections>
-                                    <action selector="goToExercise:" destination="BMF-cN-Aee" eventType="touchUpInside" id="En8-a9-H5c"/>
-                                    <segue destination="n44-iE-kmZ" kind="presentation" identifier="showLesson" id="t84-3l-JAl"/>
+                                    <action selector="goToExercise:" destination="BMF-cN-Aee" eventType="touchUpInside" id="iUn-Ty-MLG"/>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" identifier="showLesson" id="AC2-Ez-UYV"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Text here" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="zXT-1J-lZ6">
@@ -505,12 +505,11 @@
                         <outlet property="CategoryView" destination="pTt-u4-5qk" id="gKh-US-TiG"/>
                         <outlet property="backButton" destination="d97-Yj-0CZ" id="d8J-dy-z5h"/>
                         <outlet property="pageControl" destination="1tJ-yU-fUK" id="IPT-OW-GM7"/>
-                        <segue destination="BV1-FR-VrT" kind="presentation" identifier="loadLesson" id="ugL-1C-1WA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7B-hD-X0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106.59670164917542" y="-39.200000000000003"/>
+            <point key="canvasLocation" x="662" y="31"/>
         </scene>
         <!--Carusiell View Controller-->
         <scene sceneID="Gin-TF-RI7">
@@ -716,7 +715,7 @@
                                 <rect key="frame" x="0.0" y="28" width="200" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7KS-Rx-t6U" id="cR3-5z-QRM">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4F-ju-Bq5">
@@ -762,7 +761,7 @@
                                 <rect key="frame" x="0.0" y="28" width="200" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NxY-tm-xwQ" id="Yf1-h4-Ctf">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GG7-Ai-K4N">
@@ -816,16 +815,6 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9co-fs-Ncw">
                                 <rect key="frame" x="0.0" y="0.0" width="310" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpO-TA-eG2">
-                                        <rect key="frame" x="0.0" y="8" width="310" height="142"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -834,7 +823,6 @@
                     <connections>
                         <outlet property="CategoryView" destination="9co-fs-Ncw" id="Ff5-UG-VQE"/>
                         <outlet property="pageControl" destination="H8Q-5n-QEZ" id="ewo-Nf-E5s"/>
-                        <outlet property="tutorialTextView" destination="XpO-TA-eG2" id="A80-g2-XF1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6L-b7-mZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -872,6 +860,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="eal-7s-mY9"/>
-        <segue reference="cWG-ga-9hn"/>
+        <segue reference="AC2-Ez-UYV"/>
     </inferredMetricsTieBreakers>
 </document>

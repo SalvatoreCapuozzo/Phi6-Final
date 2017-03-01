@@ -91,11 +91,12 @@ class TheoryViewController: UIViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "showLesson" {
-            let lessonSelected = segue.destination as! LessonsViewController
+            let lessonSelected = segue.destination as! GameViewController
             lessonSelected.mode = self.mode
             lessonSelected.category = self.category
             SharedViewController.shared.addNewCategoryItem(aCategory: self.category!)
             SharedViewController.shared.addNewModeItem(aMode: self.mode!)
+            
             lessonSelected.maxLessonNumbers = Lesson[self.category!].count
         }
         
