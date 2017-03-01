@@ -46,14 +46,14 @@ class sksTutorial1 : BaseTutorialScene
         
         let step2 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.infoButton, text: "By tapping here, you can find help about the current simulation.\nTry it!", offset: CGPoint(x: 0, y: 0), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.infoButton, text: "By tapping here, you can find help about the current simulation.\nTry it!", offset: CGPoint(x: -2, y: -284), scene: self)
             
             self.viewController.infoButton.isEnabled = true
         }
         
         let step3 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.slowMotionButton, text: "This one right here allows you to slow the simulation's time.\nIt's turned OFF by default.", offset: CGPoint(x: 0, y: self.viewController.slowMotionButton.frame.height/4 + 5), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.slowMotionButton, text: "This one right here allows you to slow the simulation's time.\nIt's turned OFF by default.", offset: CGPoint(x: 0, y: -584), scene: self)
             
             self.viewController.slowMotionButton.isEnabled = true
         }
@@ -67,7 +67,7 @@ class sksTutorial1 : BaseTutorialScene
         
         let step5 = SimpleFSM_State(stateType: .FOCUS)
         {
-            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.slowMotionButton, text: "These 2 neat arrow buttons allow you to turn ON and OFF the graphical visualization of the acceleration and velocity vectors.", offset: CGPoint(x: 2*self.viewController.gravityButton.frame.width - 5, y: self.viewController.slowMotionButton.frame.height/4 + 5 - 2*self.viewController.gravityButton.frame.height + 10), scene: self)
+            Focus(view: self.viewController.tutorialInfoView, obj: self.viewController.slowMotionButton, text: "These 2 neat arrow buttons allow you to turn ON and OFF the graphical visualization of the acceleration and velocity vectors.", offset: CGPoint(x: 17*self.viewController.gravityButton.frame.width - 5, y: -354), scene: self)
             
             
             //CGPoint(x: self.frame.size.width - 2*self.viewController.velButton.frame.width, y: -self.frame.size.height + 2*self.viewController.velButton.frame.height)
